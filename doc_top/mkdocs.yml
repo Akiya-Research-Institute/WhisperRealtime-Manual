@@ -1,0 +1,82 @@
+site_name: Whisper-Based Real-time Speech Recognition plugin Manual
+site_url: https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/
+site_author: Kenji Asaba
+site_description: Official documentation of Whisper-Based Real-time Speech Recognition, an Unreal Engine plugin for real-time speech-to-text transcription and translation with multi-language support, based on OpenAI's Whisper model.
+copyright: Copyright &copy; 2022 Akiya Research Institute, Inc. All Rights Reserved
+
+site_dir: ../docs/en
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: M PLUS 1
+    code: M PLUS 1 Code
+  language: en
+  favicon: images/favicon.png
+  logo: images/logo.png
+  features:
+    - navigation.instant
+    - navigation.tracking    
+    # - navigation.tabs
+    - navigation.sections
+    # - navigation.expand
+    # - navigation.indexes
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    
+extra:
+  alternate:
+    - name: English
+      link: /WhisperRealtime-Manual/en/ 
+      lang: en
+    - name: 日本語
+      link: /WhisperRealtime-Manual/ja/
+      lang: ja
+  analytics:
+    provider: google
+    property: UA-2709176-10
+  social:
+    - icon: material/home
+      link: https://vrlab.akiya-souken.co.jp/
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/channel/UC7t4amWNvquSy_ODcGZ4R0g
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/Akiya_Souken_VR
+    - icon: fontawesome/brands/github 
+      link: https://github.com/Akiya-Research-Institute
+    # - icon: simple/unrealengine
+    - icon: material/store
+      link: https://www.unrealengine.com/marketplace/en/product/d293a6a427c94831888ca0f47bc5939b
+  # generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+
+plugins: []

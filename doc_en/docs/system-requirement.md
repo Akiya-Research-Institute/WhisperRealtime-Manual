@@ -1,0 +1,40 @@
+# System Requirements
+
+## Supported Unreal Engine version:
+
+- 5.1
+
+## Supported Platforms
+
+| Platform                   | Development | Target Build |
+| -------------------------- | ----------- | ------------ |
+| Windows 64bit              | ✅          | ✅          |
+| Ubuntu Desktop 64bit       |             |              | 
+| Android                    |             |              |
+
+Currently Windows is the only supported platform.  
+But we are willing to add support for Linux and Android in the future.
+
+## Supported hardware acceleration 
+
+| Platform                   | Default CPU | GPU DirectML | GPU CUDA | GPU TensorRT | NNAPI |
+| -------------------------- | ----------- | ------------ | -------- |------------- | ----- |
+| Windows 64bit              | ✅          |              | ✅      |              |       |
+| Ubuntu Desktop 64bit       |             |              |          |              |       |
+| Android                    |             |              |          |              |       |
+
+<!-- - To use GPU acceleration with DirectML, a DirectX 12 capable GPU is required. -->
+    
+### CUDA and cuDNN
+
+To use GPU acceleration with CUDA, a supported NVIDIA GPU is required and the following versions of CUDA and cuDNN are required to be installed. 
+
+=== "Windows"
+
+    - CUDA: 11.6
+    - cuDNN: 8.5.0.96
+
+<!-- === "Linux"
+
+    - CUDA: 11.6
+    - cuDNN: 8.2.4 -->
