@@ -1,25 +1,25 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="OpenAIのWhisperモデルをベースとした、Unreal Engineで動く多言語対応のリアルタイム音声テキスト変換・翻訳プラグイン「Whisper-Based Real-time Speech Recognition」の公式ドキュメント">
+        <meta name="description" content="Official documentation of Whisper-Based Real-time Speech Recognition, an Unreal Engine plugin for real-time speech-to-text transcription and translation with multi-language support, based on OpenAI's Whisper model.">
       
       
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/install/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/demo-project-overview/">
       
       <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Installation - WhisperRealtimeマニュアル</title>
+        <title>Realtime transcription demo - WhisperRealtime plugin Manual</title>
       
     
     
@@ -86,8 +86,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
-          コンテンツにスキップ
+        <a href="#realtime-transcription-demo" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -99,8 +99,8 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href=".." title="WhisperRealtimeマニュアル" class="md-header__button md-logo" aria-label="WhisperRealtimeマニュアル" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="WhisperRealtime plugin Manual" class="md-header__button md-logo" aria-label="WhisperRealtime plugin Manual" data-md-component="logo">
       
   <img src="../images/logo.png" alt="logo">
 
@@ -112,13 +112,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            WhisperRealtimeマニュアル
+            WhisperRealtime plugin Manual
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Realtime transcription demo
             
           </span>
         </div>
@@ -204,7 +204,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -215,7 +215,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
           </a>
         
-        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -227,7 +227,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            Initializing search
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -261,14 +261,14 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="WhisperRealtimeマニュアル" class="md-nav__button md-logo" aria-label="WhisperRealtimeマニュアル" data-md-component="logo">
+    <a href=".." title="WhisperRealtime plugin Manual" class="md-nav__button md-logo" aria-label="WhisperRealtime plugin Manual" data-md-component="logo">
       
   <img src="../images/logo.png" alt="logo">
 
     </a>
-    WhisperRealtimeマニュアル
+    WhisperRealtime plugin Manual
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -280,18 +280,45 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Plugin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plugin" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Plugin
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        What is this?
+        What is WhisperRealtime?
       </a>
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -302,11 +329,118 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use/" class="md-nav__link">
+        How to use
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
     
       
       
       
 
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Demo Project
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Demo Project" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Demo Project
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
   
   
     
@@ -320,70 +454,62 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Realtime transcription demo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Installation
+        Realtime transcription demo
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    System Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-the-demo" class="md-nav__link">
+    How to use the demo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
 
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modules/" class="md-nav__link">
-        Modules
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-use/" class="md-nav__link">
-        How to use
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
-        FAQ
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../changelog/" class="md-nav__link">
-        Changelog
-      </a>
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -403,24 +529,37 @@
                   
 
 
-<h1 id="installation">Installation</h1>
+<h1 id="realtime-transcription-demo">Realtime transcription demo</h1>
+<p><a href="https://www.unrealengine.com/marketplace/product/d293a6a427c94831888ca0f47bc5939b">Whisper-based Real-time Speech Recognition</a>, or <code>WhisperRealtime</code> for short, is an Unreal Engine plugin for real-time speech-to-text transcription and translation with multi-language support, based on OpenAI's Whisper model.</p>
+<p>Demo project is available on <a href="https://github.com/Akiya-Research-Institute/WhisperRealtime-Demo">GitHub</a>.</p>
+<h2 id="system-requirements">System Requirements</h2>
+<ul>
+<li>Windows 10 64bit</li>
+<li>Unreal Engine 5.1.0</li>
+<li>WhisperRealtime plugin v1.0.0 or above</li>
+<li>Microphone connected to your PC</li>
+</ul>
+<p>If you want to run with GPU,</p>
+<ul>
+<li>CUDA: 11.6</li>
+<li>cuDNN: 8.5.0.96</li>
+</ul>
+<h2 id="how-to-use-the-demo">How to use the demo</h2>
 <ol>
-<li>Purchase at <a href="https://www.unrealengine.com/marketplace/product/d293a6a427c94831888ca0f47bc5939b">UE Marketplace</a> and install it.</li>
-<li>Create an Unreal Engine project.</li>
-<li>Open the project, open "Edit &gt; Plugins" on the editor menu, enable "WhisperBasedRealtimeSpeechRecognition", and restart the project.</li>
+<li>Clone the repository: <code>git clone git@github.com:Akiya-Research-Institute/WhisperRealtime-Demo.git</code></li>
+<li>Open <code>WhisperRealtime-Demo/WhisperRealtimeDemo.uproject</code></li>
+<li>Click <code>Play</code> on UE editor.</li>
+<li>Say something to your microphone.</li>
 </ol>
-<!-- !!! Warning "Install to Linux"
-    Since the Epic Games Launcher is not provided for Linux, you need to copy the plugin manually from Windows.
-
-    1. On Windows, install the plugin from Epic Games Launcher.
-    2. On Linux, create a project.
-    3. Copy the plugin from the UE4 plugin folder on Windows to the project directory on Linux.
-        - Copy from: <*UE4 installation folder on Windows*\>\Engine\Plugins\Marketplace\WhisperBasedRealtimeSpeechRecognition
-        - Copy to: <*directory containing the .uporject created on Linux*>/Plugins/WhisperBasedRealtimeSpeechRecognition
-    4. Recreate the following symbolic links:
-        - WhisperBasedRealtimeSpeechRecognition/Source/ThirdParty/onnxruntime-linux-1.13.1/lib
-            - libnvonnxparser.so
-            - libnvonnxparser.so.8 -->
+<h2 id="options">Options</h2>
+<p><img alt="" loading="lazy" src="../images/demoOptions.png" />  </p>
+<ul>
+<li><code>Execution device</code>: Whether to use CPU or GPU.</li>
+<li><code>Model Size</code>: The larger the model, the higher the accuracy and the greater the CPU/GPU/memory usage.</li>
+<li><code>Language</code>: The language to be spoken.</li>
+<li><code>Translate to English</code>: If you just want to transcribe speech to text in the language specified above, select <code>No</code>. If you want to translate it to English, select <code>Yes</code>.</li>
+<li><code>Stop transcription</code>: Stops the transcription process.</li>
+</ul>
 
 
   
@@ -440,38 +579,23 @@
         <footer class="md-footer">
   
     
-    <nav class="md-footer__inner md-grid" aria-label="フッター" >
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../system-requirement/" class="md-footer__link md-footer__link--prev" aria-label="前: System Requirements" rel="prev">
+        <a href="../changelog/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Changelog" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                前
+                Previous
               </span>
-              System Requirements
+              Changelog
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../modules/" class="md-footer__link md-footer__link--next" aria-label="次: Modules" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                次
-              </span>
-              Modules
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
@@ -534,7 +658,7 @@
       
       
     
-    <a href="https://www.unrealengine.com/marketplace/ja/product/d293a6a427c94831888ca0f47bc5939b" target="_blank" rel="noopener" title="www.unrealengine.com" class="md-social__link">
+    <a href="https://www.unrealengine.com/marketplace/en/product/d293a6a427c94831888ca0f47bc5939b" target="_blank" rel="noopener" title="www.unrealengine.com" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16V4Z"/></svg>
     </a>
   
@@ -549,7 +673,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
