@@ -12,14 +12,14 @@
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/how-to-use/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/demo-project-overview/">
       
       <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>How to use - WhisperRealtimeマニュアル</title>
+        <title>Realtime transcription demo - WhisperRealtimeマニュアル</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-use" class="md-skip">
+        <a href="#realtime-transcription-demo" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to use
+              Realtime transcription demo
             
           </span>
         </div>
@@ -282,7 +282,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        What is this?
+        What is WhisperRealtime?
       </a>
     </li>
   
@@ -339,21 +339,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        How to use
+    <li class="md-nav__item">
+      <a href="../how-to-use.md" class="md-nav__link">
+        None
       </a>
-      
     </li>
   
 
@@ -403,44 +393,34 @@
                   
 
 
-<h1 id="how-to-use">How to use</h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>There is an example BP at <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; BP &gt; BP_WhisperTranscriptRealtime</code>.<br />
-You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; Map &gt; test_transcript</code>.</p>
-</div>
-<ol>
-<li>Create an actor blueprint.</li>
-<li>Add <code>Whisper Transcript Realtime</code> component.</li>
-<li>Set the default settings:<ul>
-<li>Specify <code>Model Size</code>. The larger the model, higher the accuracy and the CPU/GPU/memory usage.</li>
-<li>Specify <code>Execution device</code>, whether to use CPU or GPU.</li>
-<li>Specify <code>GPU Device ID</code> if you use GPU and you have multiple GPUs in your PC.</li>
-<li>Specify <code>Language spoken</code>.</li>
-<li>Specify <code>Do Translate to English</code>. If you just want to transcribe speech to text in the language specified above, leave unchecked.</li>
-<li>Specify <code>Prohibited Phrases</code> if you want to suppress certain phrases.<ul>
-<li>Note that this feature simply removes the specified phrases from the result. If you specify a short phrase, for example <code>at</code>, the phrase will be removed from all words (e.g. <code>that</code> becomes <code>th</code>).</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Get results from <code>On Speaking</code> event and <code>On Spoken</code> event.</p>
+<h1 id="realtime-transcription-demo">Realtime transcription demo</h1>
+<p><a href="https://s3.ap-northeast-1.wasabisys.com/whisperrealtime/WhisperRealtimeDemo.zip">Download from here</a></p>
+<h2 id="system-requirements">System Requirements</h2>
 <ul>
-<li><code>On Speaking</code> event gives intermidiate result while the user is still speaking.</li>
-<li><code>On Spoken</code> event gives the final result after the user stops speaking.</li>
+<li>Windows 10 64bit</li>
+<li>Microphone connected to your PC</li>
 </ul>
-<p><img alt="" loading="lazy" src="../images/BP1.png" />  </p>
+<p>If you want to run with GPU,</p>
+<ul>
+<li>
+<p>NVIDIA GPU that support CUDA 11.6</p>
 </li>
 <li>
-<p>To stop transcription or translation, call <code>Stop Transcription</code> function of <code>Whisper Transcript Realtime</code> component.</p>
+<p>CUDA: 11.6</p>
 </li>
-<li>To restart transcription or translation, call <code>Restart Transcription</code> function of <code>Whisper Transcript Realtime</code> component.</li>
-<li>
-<p>To change settings, call <code>Change Setting</code> function of <code>Whisper Transcript Realtime</code> component.</p>
-<p><img alt="" loading="lazy" src="../images/BP2.png" />  </p>
-</li>
-</ol>
+<li>cuDNN: 8.5.0.96</li>
+</ul>
+<h2 id="select-microphone">Select microphone</h2>
+<p>Select from the Windows (OS) setting.</p>
+<h2 id="how-to-use-demo">How to use demo</h2>
+<p>Demo project contains 3 maps which corresponds to the 3 features described in "How to use" section.  </p>
+<ul>
+<li><a href="../how-to-use-transcript">Transcription</a></li>
+<li><a href="../how-to-use-alignment-short">Alignment for short phrases</a></li>
+<li><a href="../how-to-use-alignment-long">Alignment for long phrases</a></li>
+</ul>
+<p>See these pages for details of the optional settings available in the UI panel on the right side of the window.</p>
+<p><img alt="" loading="lazy" src="../images/demo.png" />  </p>
 
 
   
@@ -458,42 +438,6 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="フッター" >
-      
-        
-        <a href="../modules/" class="md-footer__link md-footer__link--prev" aria-label="前: Modules" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                前
-              </span>
-              Modules
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../faq/" class="md-footer__link md-footer__link--next" aria-label="次: FAQ" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                次
-              </span>
-              FAQ
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Official documentation of Whisper-Based Real-time Speech Recognition, an Unreal Engine plugin for real-time speech-to-text transcription and translation with multi-language support, based on OpenAI's Whisper model.">
+        <meta name="description" content="Official documentation of Whisper-Based Real-time Speech Recognition, an Unreal Engine plugin for real-time speech-to-text transcription and alignment with multi-language support, based on OpenAI's Whisper model.">
       
       
         <meta name="author" content="Kenji Asaba">
@@ -364,10 +364,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_5">
+          How to use
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to use" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          How to use
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../how-to-use/" class="md-nav__link">
-        How to use
+      <a href="../how-to-use-transcript/" class="md-nav__link">
+        Transcription
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use-alignment-short/" class="md-nav__link">
+        Alignment for short phrases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use-alignment-long/" class="md-nav__link">
+        Alignment for long phrases
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -486,15 +547,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-the-demo" class="md-nav__link">
-    How to use the demo
+  <a href="#select-microphone" class="md-nav__link">
+    Select microphone
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
+  <a href="#how-to-use-demo" class="md-nav__link">
+    How to use demo
   </a>
   
 </li>
@@ -530,36 +591,33 @@
 
 
 <h1 id="realtime-transcription-demo">Realtime transcription demo</h1>
-<p><a href="https://www.unrealengine.com/marketplace/product/d293a6a427c94831888ca0f47bc5939b">Whisper-based Real-time Speech Recognition</a>, or <code>WhisperRealtime</code> for short, is an Unreal Engine plugin for real-time speech-to-text transcription and translation with multi-language support, based on OpenAI's Whisper model.</p>
-<p>Demo project is available on <a href="https://github.com/Akiya-Research-Institute/WhisperRealtime-Demo">GitHub</a>.</p>
+<p><a href="https://s3.ap-northeast-1.wasabisys.com/whisperrealtime/WhisperRealtimeDemo.zip">Download from here</a></p>
 <h2 id="system-requirements">System Requirements</h2>
 <ul>
 <li>Windows 10 64bit</li>
-<li>Unreal Engine 5.1.0</li>
-<li>WhisperRealtime plugin v1.0.0 or above</li>
 <li>Microphone connected to your PC</li>
 </ul>
 <p>If you want to run with GPU,</p>
 <ul>
-<li>CUDA: 11.6</li>
+<li>
+<p>NVIDIA GPU that support CUDA 11.6</p>
+</li>
+<li>
+<p>CUDA: 11.6</p>
+</li>
 <li>cuDNN: 8.5.0.96</li>
 </ul>
-<h2 id="how-to-use-the-demo">How to use the demo</h2>
-<ol>
-<li>Clone the repository: <code>git clone git@github.com:Akiya-Research-Institute/WhisperRealtime-Demo.git</code></li>
-<li>Open <code>WhisperRealtime-Demo/WhisperRealtimeDemo.uproject</code></li>
-<li>Click <code>Play</code> on UE editor.</li>
-<li>Say something to your microphone.</li>
-</ol>
-<h2 id="options">Options</h2>
-<p><img alt="" loading="lazy" src="../images/demoOptions.png" />  </p>
+<h2 id="select-microphone">Select microphone</h2>
+<p>Select from the Windows (OS) setting.</p>
+<h2 id="how-to-use-demo">How to use demo</h2>
+<p>Demo project contains 3 maps which corresponds to the 3 features described in "How to use" section.  </p>
 <ul>
-<li><code>Execution device</code>: Whether to use CPU or GPU.</li>
-<li><code>Model Size</code>: The larger the model, the higher the accuracy and the greater the CPU/GPU/memory usage.</li>
-<li><code>Language</code>: The language to be spoken.</li>
-<li><code>Translate to English</code>: If you just want to transcribe speech to text in the language specified above, select <code>No</code>. If you want to translate it to English, select <code>Yes</code>.</li>
-<li><code>Stop transcription</code>: Stops the transcription process.</li>
+<li><a href="../how-to-use-transcript">Transcription</a></li>
+<li><a href="../how-to-use-alignment-short">Alignment for short phrases</a></li>
+<li><a href="../how-to-use-alignment-long">Alignment for long phrases</a></li>
 </ul>
+<p>See these pages for details of the optional settings available in the UI panel on the right side of the window.</p>
+<p><img alt="" loading="lazy" src="../images/demo.png" />  </p>
 
 
   
