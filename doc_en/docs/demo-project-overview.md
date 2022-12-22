@@ -1,5 +1,7 @@
 # Realtime transcription demo
 
+https://s3.ap-northeast-1.wasabisys.com/whisperrealtime/WhisperRealtimeDemo.zip
+
 [Whisper-based Real-time Speech Recognition](https://www.unrealengine.com/marketplace/product/d293a6a427c94831888ca0f47bc5939b), or `WhisperRealtime` for short, is an Unreal Engine plugin for real-time speech-to-text transcription and translation with multi-language support, based on OpenAI's Whisper model.
 
 Demo project is available on [GitHub](https://github.com/Akiya-Research-Institute/WhisperRealtime-Demo).

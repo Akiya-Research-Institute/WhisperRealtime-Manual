@@ -1,7 +1,7 @@
 site_name: WhisperRealtime plugin Manual
 site_url: https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/
 site_author: Kenji Asaba
-site_description: Official documentation of Whisper-Based Real-time Speech Recognition, an Unreal Engine plugin for real-time speech-to-text transcription and translation with multi-language support, based on OpenAI's Whisper model.
+site_description: Official documentation of Whisper-Based Real-time Speech Recognition, an Unreal Engine plugin for real-time speech-to-text transcription and alignment with multi-language support, based on OpenAI's Whisper model.
 copyright: Copyright &copy; 2022 Akiya Research Institute, Inc. All Rights Reserved
 
 site_dir: ../docs/en
@@ -92,7 +92,10 @@ nav:
     - system-requirement.md
     - install.md
     - modules.md
-    - how-to-use.md
+    - How to use:
+      - how-to-use-transcript.md
+      - how-to-use-alignment-short.md
+      - how-to-use-alignment-long.md
     - faq.md
     - changelog.md
   - Demo Project:
