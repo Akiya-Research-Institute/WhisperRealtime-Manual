@@ -6,4 +6,4 @@
 
 - Just add one component to your BP and you are ready to use it.
 - No python or any separated servers needed.
-- Demo project available on [GitHub](https://github.com/Akiya-Research-Institute/WhisperRealtime-Demo).
+- [Demo project](./demo-project-overview) is available for free.
