@@ -12,14 +12,14 @@
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/system-requirement/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/how-to-use-transcript/">
       
       <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>System Requirements - WhisperRealtimeマニュアル</title>
+        <title>Transcription - WhisperRealtimeマニュアル</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system-requirements" class="md-skip">
+        <a href="#transcription" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System Requirements
+              Transcription
             
           </span>
         </div>
@@ -294,79 +294,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          System Requirements
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../system-requirement/" class="md-nav__link">
         System Requirements
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#supported-unreal-engine-version" class="md-nav__link">
-    Supported Unreal Engine version:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-platforms" class="md-nav__link">
-    Supported Platforms
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-hardware-acceleration" class="md-nav__link">
-    Supported hardware acceleration
-  </a>
-  
-    <nav class="md-nav" aria-label="Supported hardware acceleration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cuda-and-cudnn" class="md-nav__link">
-    CUDA and cuDNN
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -461,97 +393,62 @@
                   
 
 
-<h1 id="system-requirements">System Requirements</h1>
-<h2 id="supported-unreal-engine-version">Supported Unreal Engine version:</h2>
-<ul>
-<li>5.1</li>
+<h1 id="transcription">Transcription</h1>
+<p>See <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; BP &gt; Transcript &gt; BP_WhisperTranscriptRealtime</code> for a sample implementation.<br />
+You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; Map &gt; test_Transcript</code>.</p>
+<h2 id="basic-setup">Basic setup</h2>
+<ol>
+<li>Create an actor blueprint.</li>
+<li>Add <code>Whisper Realtime Transcript</code> component.</li>
+<li>Set the default Neural Net settings:<ul>
+<li>Specify <code>Model Size</code>. The larger the model, higher the accuracy and the CPU/GPU/memory usage.</li>
+<li>Specify <code>Execution device</code>, whether to use CPU or GPU.</li>
+<li>Specify <code>GPU Device ID</code> if you use GPU and you have multiple GPUs in your PC.</li>
+<li>Specify <code>Language spoken</code>.</li>
+<li>Specify <code>Do Translate to English</code>. If you just want to transcribe speech to text in the language specified above, leave unchecked.</li>
 </ul>
-<h2 id="supported-platforms">Supported Platforms</h2>
-<table>
-<thead>
-<tr>
-<th>Platform</th>
-<th>Development</th>
-<th>Target Build</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Windows 64bit</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>Ubuntu Desktop 64bit</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Android</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Currently Windows is the only supported platform.<br />
-But we are willing to add support for Linux and Android in the future.</p>
-<h2 id="supported-hardware-acceleration">Supported hardware acceleration</h2>
-<table>
-<thead>
-<tr>
-<th>Platform</th>
-<th>Default CPU</th>
-<th>GPU DirectML</th>
-<th>GPU CUDA</th>
-<th>GPU TensorRT</th>
-<th>NNAPI</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Windows 64bit</td>
-<td>✅</td>
-<td></td>
-<td>✅</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Ubuntu Desktop 64bit</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Android</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- - To use GPU acceleration with DirectML, a DirectX 12 capable GPU is required. -->
-
-<h3 id="cuda-and-cudnn">CUDA and cuDNN</h3>
-<p>To use GPU acceleration with CUDA, a supported NVIDIA GPU is required and the following versions of CUDA and cuDNN are required to be installed. </p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><a href="https://developer.nvidia.com/cuda-11-6-0-download-archive?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10">CUDA: 11.6</a></li>
-<li><a href="https://developer.nvidia.com/compute/cudnn/secure/8.5.0/local_installers/11.7/cudnn-windows-x86_64-8.5.0.96_cuda11-archive.zip">cuDNN: 8.5.0.96</a></li>
+</li>
+<li>Set the default Audio Input Spectrum Analysis settings:<ul>
+<li>Specify <code>Silence Volume Threshold</code>, volume threshold for determining silence.<br />
+    Maximum microphone input is 1.0. Complete silence is 0.0.</li>
+<li>Specify <code>Silence Duration Threshold</code>, time threshold for determining silent state (in seconds).<br />
+    If the volume below <code>Silence Volume Threshold</code> continues for this time, a transition is made from the speech state to the silent state.</li>
+<li>Specify <code>Speaking Duration Threshold</code>, Time threshold for determining speaking state (in seconds).<br />
+    If the volume above <code>Silence Volume Threshold</code> continues for this time, a transition is made from the silent state to the speech state.</li>
 </ul>
+</li>
+<li>Set the default transcript settings:<ul>
+<li>Specify <code>Prohibited Phrases</code> if you want to suppress certain phrases.<ul>
+<li>Note that this feature simply removes the specified phrases from the result. If you specify a short phrase, for example <code>at</code>, the phrase will be removed from all words (e.g. <code>that</code> becomes <code>th</code>).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Get results from <code>On Speaking</code> event and <code>On Spoken</code> event.</p>
+<ul>
+<li><code>On Speaking</code> event gives intermidiate result while the user is still speaking.</li>
+<li><code>On Spoken</code> event gives the final result after the user stops speaking.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The values for Audio Input Spectrum Analysis settings are used to determine user is speaking or not.</p>
 </div>
-</div>
-</div>
-<!-- === "Linux"
-
-    - CUDA: 11.6
-    - cuDNN: 8.2.4 -->
+<p><img alt="" loading="lazy" src="../images/BP-transcript-basic-setup.png" />  </p>
+</li>
+</ol>
+<h2 id="change-settings">Change settings</h2>
+<ul>
+<li>
+<p>To change Neural Net settings, call <code>Change Neural Net Setting</code> function.</p>
+<p><img alt="" loading="lazy" src="../images/BP-transcript-change-setting.png" />  </p>
+</li>
+</ul>
+<h2 id="stop-and-restart">Stop and restart</h2>
+<ul>
+<li>To stop transcription or translation, call <code>Stop Mic Input</code> function.</li>
+<li>To restart transcription or translation, call <code>Restart Mic Input</code> function.</li>
+</ul>
 
 
   
@@ -569,42 +466,6 @@ But we are willing to add support for Linux and Android in the future.</p>
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="フッター" >
-      
-        
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="前: What is WhisperRealtime?" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                前
-              </span>
-              What is WhisperRealtime?
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../install/" class="md-footer__link md-footer__link--next" aria-label="次: Installation" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                次
-              </span>
-              Installation
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

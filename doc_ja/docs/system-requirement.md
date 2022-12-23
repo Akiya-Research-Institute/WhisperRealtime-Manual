@@ -31,8 +31,8 @@ To use GPU acceleration with CUDA, a supported NVIDIA GPU is required and the fo
 
 === "Windows"
 
-    - CUDA: 11.6
-    - cuDNN: 8.5.0.96
+    - [CUDA: 11.6](https://developer.nvidia.com/cuda-11-6-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10)
+    - [cuDNN: 8.5.0.96](https://developer.nvidia.com/compute/cudnn/secure/8.5.0/local_installers/11.7/cudnn-windows-x86_64-8.5.0.96_cuda11-archive.zip)
 
 <!-- === "Linux"
 

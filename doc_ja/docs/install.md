@@ -2,7 +2,7 @@
 
 1. Purchase at [UE Marketplace](https://www.unrealengine.com/marketplace/product/d293a6a427c94831888ca0f47bc5939b) and install it.
 2. Create an Unreal Engine project.
-3. Open the project, open "Edit > Plugins" on the editor menu, enable "WhisperBasedRealtimeSpeechRecognition", and restart the project.
+3. Open the project, open `Edit > Plugins` on the editor menu, enable `WhisperRealtime: Whisper-based Real-time Speech Recognition`, and restart the project.
 
 <!-- !!! Warning "Install to Linux"
     Since the Epic Games Launcher is not provided for Linux, you need to copy the plugin manually from Windows.

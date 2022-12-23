@@ -12,14 +12,14 @@
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/how-to-use/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/demo-project-overview/">
       
       <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>How to use - WhisperRealtimeマニュアル</title>
+        <title>Demo - WhisperRealtimeマニュアル</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-use" class="md-skip">
+        <a href="#demo" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to use
+              Demo
             
           </span>
         </div>
@@ -282,7 +282,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        What is this?
+        What is WhisperRealtime?
       </a>
     </li>
   
@@ -339,21 +339,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        How to use
+    <li class="md-nav__item">
+      <a href="../how-to-use.md" class="md-nav__link">
+        None
       </a>
-      
     </li>
   
 
@@ -403,44 +393,172 @@
                   
 
 
-<h1 id="how-to-use">How to use</h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>There is an example BP at <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; BP &gt; BP_WhisperTranscriptRealtime</code>.<br />
-You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; Map &gt; test_transcript</code>.</p>
-</div>
+<h1 id="demo">Demo</h1>
+<p>Demo of WhisperRealtime plugin for Unreal Engine</p>
+<h2 id="download">Download</h2>
+<div class="admonition danger">
+<p class="admonition-title">Please read and accept the End-User License Agreement before downloading the demo</p>
+<details class="danger">
+<summary>End-User License Agreement</summary>
+<p>The demo software ("Software") includes the Unreal® Engine code and other code, materials, and information (the “Epic Materials”) from Epic Games, Inc. (“Epic”).<br />
+The Software contains source code provided by NVIDIA Corporation.  </p>
 <ol>
-<li>Create an actor blueprint.</li>
-<li>Add <code>Whisper Transcript Realtime</code> component.</li>
-<li>Set the default settings:<ul>
-<li>Specify <code>Model Size</code>. The larger the model, higher the accuracy and the CPU/GPU/memory usage.</li>
-<li>Specify <code>Execution device</code>, whether to use CPU or GPU.</li>
-<li>Specify <code>GPU Device ID</code> if you use GPU and you have multiple GPUs in your PC.</li>
-<li>Specify <code>Language spoken</code>.</li>
-<li>Specify <code>Do Translate to English</code>. If you just want to transcribe speech to text in the language specified above, leave unchecked.</li>
-<li>Specify <code>Prohibited Phrases</code> if you want to suppress certain phrases.<ul>
-<li>Note that this feature simply removes the specified phrases from the result. If you specify a short phrase, for example <code>at</code>, the phrase will be removed from all words (e.g. <code>that</code> becomes <code>th</code>).</li>
-</ul>
-</li>
-</ul>
+<li>
+<p>You agree to use the Software only for purposes that are permitted by (a) this End-User License Agreement ("Agreement"), and (b) any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions.</p>
 </li>
 <li>
-<p>Get results from <code>On Speaking</code> event and <code>On Spoken</code> event.</p>
-<ul>
-<li><code>On Speaking</code> event gives intermidiate result while the user is still speaking.</li>
-<li><code>On Spoken</code> event gives the final result after the user stops speaking.</li>
-</ul>
-<p><img alt="" loading="lazy" src="../images/BP1.png" />  </p>
+<p>Subject to the terms of this Agreement, Akiya Research Institute hereby grants you a non-exclusive, non-transferable license, without the right to sublicense to install and use the Software solely for  verification of its functionality.</p>
 </li>
 <li>
-<p>To stop transcription or translation, call <code>Stop Transcription</code> function of <code>Whisper Transcript Realtime</code> component.</p>
+<p>The Software is bundled with, or otherwise include or be distributed with, third party software licensed with separate legal notices or terms as may be described in proprietary notices accompanying the Software. If and to the extent there is a conflict between the terms in this Agreement and the license terms associated with the component, the license terms associated with the components control only to the extent necessary to resolve the conflict.</p>
 </li>
-<li>To restart transcription or translation, call <code>Restart Transcription</code> function of <code>Whisper Transcript Realtime</code> component.</li>
 <li>
-<p>To change settings, call <code>Change Setting</code> function of <code>Whisper Transcript Realtime</code> component.</p>
-<p><img alt="" loading="lazy" src="../images/BP2.png" />  </p>
+<p>You may not reverse engineer, decompile or disassemble, or remove copyright or other proprietary notices from any portion of the Software.</p>
+</li>
+<li>
+<p>You may not copy, sell, rent, sublicense, transfer, distribute, modify, or create derivative works of any portion of the Software.</p>
+</li>
+<li>
+<p>You may not bypass, disable, or circumvent any encryption, security, digital rights management or authentication mechanism in the Software.</p>
+</li>
+<li>
+<p>You may not use any portion of the Software in any manner that would cause it to become subject to an open source software license.</p>
+</li>
+<li>
+<p>You acknowledge that the Software as delivered is not tested or certified by NVIDIA and Akiya Research Institute for use in connection with any system. NVIDIA and Akiya Research Institute shall not be liable to you or any third party, in whole or in part, for any claims or damages arising from the use of the Software.</p>
+</li>
+<li>
+<p>You agree to defend, indemnify and hold harmless NVIDIA, Akiya Research Institute and their affiliates, and their respective employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, fines, restitutions and expenses (including but not limited to attorney’s fees and costs incident to establishing the right of indemnification) arising from the use of the Software.</p>
+</li>
+<li>
+<p>THE Software IS PROVIDED BY NVIDIA AND AKIYA RESEARCH INSTITUTE “AS IS” AND “WITH ALL FAULTS.” TO THE MAXIMUM EXTENT PERMITTED BY LAW, NVIDIA, AKIYA RESEARCH INSTITUTE AND ITS AFFILIATES EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND OR NATURE, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, OR THE ABSENCE OF ANY DEFECTS THEREIN, WHETHER LATENT OR PATENT. NO WARRANTY IS MADE ON THE BASIS OF TRADE USAGE, COURSE OF DEALING OR COURSE OF TRADE.</p>
+</li>
+<li>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, NVIDIA, AKIYA RESEARCH INSTITUTE AND ITS AFFILIATES SHALL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES, OR ANY LOST PROFITS, LOSS OF USE, LOSS OF DATA OR LOSS OF GOODWILL, OR THE COSTS OF PROCURING SUBSTITUTE PRODUCTS, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE USE OR PERFORMANCE OF THE Software, WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON BREACH OF CONTRACT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER CAUSE OF ACTION OR THEORY OF LIABILITY. IN NO EVENT WILL NVIDIA’S, AKIYA RESEARCH INSTITUTE'S AND ITS AFFILIATES TOTAL CUMULATIVE LIABILITY UNDER OR ARISING OUT OF THIS AGREEMENT EXCEED US$10.00. THE NATURE OF THE LIABILITY OR THE NUMBER OF CLAIMS OR SUITS SHALL NOT ENLARGE OR EXTEND THIS LIMIT.<br />
+These exclusions and limitations of liability shall apply regardless if NVIDIA, Akiya Research Institute or its affiliates have been advised of the possibility of such damages, and regardless of whether a remedy fails its essential purpose. These exclusions and limitations of liability form an essential basis of the bargain between the parties, and, absent any of these exclusions or limitations of liability, the provisions of this Agreement, including, without limitation, the economic terms, would be substantially different.</p>
+</li>
+<li>
+<p>All Epic Materials are provided on an “as is” and “as available” basis, “with all faults” and without warranty of any kind.  Akiya Research Institute, Epic, and Epic’s affiliates disclaim all warranties, conditions, common law duties, and representations (express, implied, oral, and written) with respect to the Epic Materials, including without limitation all express, implied, and statutory warranties and conditions of any kind, such as title, non-interference with your enjoyment, authority, non-infringement, merchantability, fitness or suitability for any purpose (whether or not Epic knows or has reason to know of any such purpose), system integration, accuracy or completeness, results, reasonable care, workmanlike effort, lack of negligence, and lack of viruses, whether alleged to arise under law, by reason of custom or usage in the trade, or by course of dealing.  Without limiting the generality of the foregoing, Akiya Research Institute, Epic, and Epic’s affiliates make no warranty that (1) any of the Epic Materials will operate properly, including as integrated in the MocapForAll, (2) that the Epic Materials will meet your requirements, (3) that the operation of the Epic Materials will be uninterrupted, bug free, or error free in any or all circumstances, (4) that any defects in the Epic Materials can or will be corrected, (5) that the Epic Materials are or will be in compliance with a platform manufacturer’s rules or requirements, or (6) that a platform manufacturer has approved or will approve this MocapForAll, or will not revoke approval of this MocapForAll for any or no reason.  Any warranty against infringement that may be provided in Section 2-312 of the Uniform Commercial Code or in any other comparable statute is expressly disclaimed by Akiya Research Institute and Epic.  Akiya Research Institute, Epic, and Epic’s affiliates do not guarantee continuous, error-free, virus-free, or secure operation of or access to the Epic Materials.  This paragraph will apply to the maximum extent permitted by applicable law. </p>
+</li>
+<li>
+<p>To the maximum extent permitted by applicable law, neither Akiya Research Institute, Epic, Epic’s licensors, nor its or their affiliates, nor any of Akiya Research Institute’s or Epic’s service providers, shall be liable in any way for loss or damage of any kind resulting from the use or inability to use the Epic Materials or otherwise in connection with this agreement, including but not limited to loss of goodwill, work stoppage, computer failure, or malfunction, or any and all other commercial damages or losses.  In no event will Akiya Research Institute, Epic, Epic’s licensors, nor its or their affiliates, nor any of Akiya Research Institute’s or Epic’s service providers be liable for any loss of profits or any indirect, incidental, consequential, special, punitive, or exemplary damages, or any other damages arising out of or in connection with this agreement or the Epic Materials, or the delay or inability to use or lack of functionality of the Epic Materials, even in the event of Akiya Research Institute’s, Epic’s, or Epic’s affiliates’ fault, tort (including negligence), strict liability, indemnity, product liability, breach of contract, breach of warranty, or otherwise and even if Akiya Research Institute, Epic or Epic’s affiliates have been advised of the possibility of such damages.  These limitations and exclusions regarding damages apply even if any remedy fails to provide adequate compensation.</p>
+</li>
+<li>
+<p>Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, the liability of Akiya Research Institute, Epic, Epic’s licensors, its and their affiliates, and any of Akiya Research Institute’s or Epic’s service providers shall be limited to the full extent permitted by law.</p>
 </li>
 </ol>
+</details>
+<details class="success">
+<summary>I have read and accept the End-User License Agreement.</summary>
+<p><a href="https://s3.ap-northeast-1.wasabisys.com/whisperrealtime/WhisperRealtimeDemo_v1.0.0.zip">Download the demo software</a></p>
+</details>
+</div>
+<h2 id="system-requirements">System Requirements</h2>
+<ul>
+<li>Windows 10 64bit</li>
+<li>Microphone connected to your PC</li>
+</ul>
+<p>If you want to run with GPU,</p>
+<ul>
+<li>NVIDIA GPU that support CUDA 11.6</li>
+</ul>
+<h2 id="how-to-select-microphone">How to select microphone</h2>
+<p>Select from the Windows (OS) setting.</p>
+<h2 id="how-to-use-demo">How to use demo</h2>
+<p>Demo project contains 3 maps which corresponds to the 3 features described in "How to use" section.  </p>
+<ul>
+<li><a href="../how-to-use-transcript">Transcription</a></li>
+<li><a href="../how-to-use-alignment-short">Alignment for short phrases</a></li>
+<li><a href="../how-to-use-alignment-long">Alignment for long phrases</a></li>
+</ul>
+<p>See these pages for details of the optional settings available in the UI panel on the right side of the window.</p>
+<p><img alt="" loading="lazy" src="../images/demo.png" />  </p>
+<h2 id="third-party-license-notice">Third party license notice</h2>
+<p>The demo software  uses Unreal® Engine. Unreal® is a trademark or registered trademark of Epic Games, Inc. in the United States of America and elsewhere. Unreal® Engine, Copyright 1998 – 2022, Epic Games, Inc. All rights reserved.</p>
+<p>The demo software is built using the following open source software:</p>
+<details class="note">
+<summary><a href="https://github.com/microsoft/onnxruntime">ONNX Runtime</a></summary>
+<p>MIT License</p>
+<p>Copyright (c) Microsoft Corporation</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+</details>
+<details class="note">
+<summary><a href="https://zlib.net/">zlib</a></summary>
+<p>zlib.h -- interface of the 'zlib' general purpose compression library
+version 1.2.13, October 13th, 2022</p>
+<p>Copyright (C) 1995-2022 Jean-loup Gailly and Mark Adler</p>
+<p>This software is provided 'as-is', without any express or implied
+warranty.  In no event will the authors be held liable for any damages
+arising from the use of this software.</p>
+<p>Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:</p>
+<ol>
+<li>The origin of this software must not be misrepresented; you must not
+claim that you wrote the original software. If you use this software
+in a product, an acknowledgment in the product documentation would be
+appreciated but is not required.</li>
+<li>Altered source versions must be plainly marked as such, and must not be
+misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>Jean-loup Gailly        Mark Adler
+jloup@gzip.org          madler@alumni.caltech.edu</p>
+</details>
+<details class="note">
+<summary><a href="https://github.com/openai/whisper">Whisper</a></summary>
+<p>MIT License</p>
+<p>Copyright (c) 2022 OpenAI</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+</details>
+<details class="note">
+<summary><a href="https://github.com/ggerganov/whisper.cpp">whisper.cpp</a></summary>
+<p>MIT License</p>
+<p>Copyright (c) 2022 Georgi Gerganov</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+</details>
 
 
   
@@ -458,42 +576,6 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="フッター" >
-      
-        
-        <a href="../modules/" class="md-footer__link md-footer__link--prev" aria-label="前: Modules" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                前
-              </span>
-              Modules
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../faq/" class="md-footer__link md-footer__link--next" aria-label="次: FAQ" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                次
-              </span>
-              FAQ
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
