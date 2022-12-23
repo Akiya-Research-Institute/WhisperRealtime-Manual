@@ -1,10 +1,12 @@
-# Demo
+# 機能デモ
 
-Demo of WhisperRealtime plugin for Unreal Engine
+Unreal Engine向けWhisperRealtimeプラグインの.exe形式デモ
 
-## Download
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w8mlDA-4wzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-!!! Danger "Please read and accept the End-User License Agreement before downloading the demo"
+## ダウンロード
+
+!!! Danger "ダウンロードの前に必ず End-User License Agreement を読み、同意してください"
 
     ??? Danger "End-User License Agreement"
 
@@ -40,31 +42,31 @@ Demo of WhisperRealtime plugin for Unreal Engine
 
         1. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, the liability of Akiya Research Institute, Epic, Epic’s licensors, its and their affiliates, and any of Akiya Research Institute’s or Epic’s service providers shall be limited to the full extent permitted by law.
 
-    ??? Success "I have read and accept the End-User License Agreement."
+    ??? Success "私はEnd-User License Agreementに同意します。"
         [Download the demo software](https://s3.ap-northeast-1.wasabisys.com/whisperrealtime/WhisperRealtimeDemo_v1.0.0.zip)
 
-## System Requirements
+## システム要件
 
 - Windows 10 64bit
-- Microphone connected to your PC
+- PCに接続されたマイク
 
-If you want to run with GPU,
+GPUで実行するためには、
 
-- NVIDIA GPU that support CUDA 11.6
+- CUDA 11.6をサポートするNVIDIA GPU
 
-## How to select microphone
+## マイクの選択方法
 
-Select from the Windows (OS) setting.
+Windows（OS）設定からマイクを選択してから本デモを起動してください。
 
-## How to use demo
+## デモの使い方
 
-Demo project contains 3 maps which corresponds to the 3 features described in "How to use" section.  
+デモプロジェクトには、「How to use」で説明した3つの機能に対応する3つのマップが含まれています。 
 
 - [Transcription](../how-to-use-transcript)
 - [Alignment for short phrases](../how-to-use-alignment-short)
 - [Alignment for long phrases](../how-to-use-alignment-long)
 
-See these pages for details of the optional settings available in the UI panel on the right side of the window.
+ウィンドウ右側のUIパネルで利用可能なオプション設定の詳細については、これらのページを参照してください。
 
 ![](images/demo.png){ loading=lazy }  
 
