@@ -15,7 +15,7 @@ You can test it in sample map located at `Plugins > WhisperRealtime > Sample > M
 	- Specify `Min Token Length to Search`, number of tokens to check if they have been spoken.
 	- Specify `Probability Threshold`, a confidence threshold base for determining speech.
 		
-		??? Question "Formula"
+		??? Info "Formula"
 			If b is this value and p is the probability of occurrence of each token when silence is input, then
 
 			    (1 - p) * b + p
@@ -33,7 +33,7 @@ You can test it in sample map located at `Plugins > WhisperRealtime > Sample > M
 
 	- See [How to use - Transcription](../how-to-use-transcript) page for the difference of `On Speaking` and `On Spoken` events.
 
-	??? Question "How to check the tokens and thresholds for each phrase"
+	??? Info "How to check the tokens and thresholds for each phrase"
 		Call `Get Alignment Targets` to get the array of `Whisper Alignment Long Target`.  
 		Each element of this array contains information such as the token ID for each phrase.
 

@@ -12,8 +12,9 @@
 | Ubuntu Desktop 64bit       |             |              | 
 | Android                    |             |              |
 
-Currently Windows is the only supported platform.  
-But we are willing to add support for Linux and Android in the future.
+!!! Question "Support for other platforms"
+    Currently Windows is the only supported platform.  
+    But we are willing to add support for Linux and Android in the future.
 
 ## Supported hardware acceleration 
 

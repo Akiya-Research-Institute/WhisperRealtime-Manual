@@ -16,7 +16,7 @@
 	- `Min Token Length to Search`：発話されたかどうかを確認するトークンの数を指定します。
 	- `Probability Threshold`：発話を判定するための確率の閾値の基準値を指定します。
 		
-		??? Question "閾値の算出式"
+		??? Info "閾値の算出式"
 			bをこの値、pを無音入力時の各トークンの出現確率とすると
 
 			    (1 - p) * b + p
@@ -33,7 +33,7 @@
 		- `Probabilities`: フレーズ内の各トークンが発話されたかどうかの確率。
 	- `On Speaking`と`On Spoken`の違いは、[使い方 - 文字起こし](../how-to-use-transcript)ページを参照してください。
 
-	??? Question "各フレーズに含まれるトークンや閾値の確認方法"
+	??? Info "各フレーズに含まれるトークンや閾値の確認方法"
 		`Get Alignment Targets`を呼び出すことで、`Whisper Alignment Long Target`の配列を取得できます。  
 		この配列の各要素は、各フレーズのトークンIDなどの情報を格納しています。
 
