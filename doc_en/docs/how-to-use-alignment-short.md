@@ -33,7 +33,8 @@ This function demonstrates:
 
 ## Change settings
 
-6. To change `Phrases to Align`, call `Set Phrases` function.
-7. To change Neural Net settings, call `Change Neural Net Setting` function.
+- To change `Phrases to Align`, call `Set Phrases` function.
+- To change Audio Input Spectrum Analysis settings, call `Change Spectrum Analysis Setting` function.
+- To change Neural Net settings, call `Change Neural Net Setting` function.
 
     ![](images/BP-align-short-change-setting.png){ loading=lazy }  

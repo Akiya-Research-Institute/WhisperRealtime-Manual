@@ -35,6 +35,7 @@ You can test it in sample map located at `Plugins > WhisperRealtime > Sample > M
 
 ## Change settings
 
+- To change Audio Input Spectrum Analysis settings, call `Change Spectrum Analysis Setting` function.
 - To change Neural Net settings, call `Change Neural Net Setting` function.
 
 	![](images/BP-transcript-change-setting.png){ loading=lazy }  

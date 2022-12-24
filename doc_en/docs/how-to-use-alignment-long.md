@@ -1,6 +1,6 @@
 # Alignment for long phrases
 
-See `Plugins > WhisperRealtime > Sample > BP > Alignment_Long > BP_WhisperAlignmentRealtime` for a sample implementation.
+See `Plugins > WhisperRealtime > Sample > BP > Alignment_Long > BP_WhisperRealtimeAlignmentLongText` for a sample implementation.
 You can test it in sample map located at `Plugins > WhisperRealtime > Sample > Map > test_AlignmentLong`.
 
 ## Basic setup 
@@ -33,16 +33,21 @@ You can test it in sample map located at `Plugins > WhisperRealtime > Sample > M
 
 	- See [How to use - Transcription](../how-to-use-transcript) page for the difference of `On Speaking` and `On Spoken` events.
 
+	??? Question "How to check the tokens and thresholds for each phrase"
+		Call `Get Alignment Targets` to get the array of `Whisper Alignment Long Target`.  
+		Each element of this array contains information such as the token ID for each phrase.
+
 ![](images/BP-align-long-basic-setup.png){ loading=lazy }  
 
 ## Reset the progress
 
-Call "Reset Progress" function to reset the progress of alignment for all phrases.
+Call `Reset Progress` function to reset the progress of alignment for all phrases.
 
 ## Change settings
 
-7. To change Alignment settings, call `Change Alignment Setting` function.
-8. To change `Phrases to Align`, call `Set Phrases` function.
-9. To change Neural Net settings, call `Change Neural Net Setting` function.
+- To change Alignment settings, call `Change Alignment Setting` function.
+- To change `Phrases to Align`, call `Set Phrases` function.
+- To change Audio Input Spectrum Analysis settings, call `Change Spectrum Analysis Setting` function.
+- To change Neural Net settings, call `Change Neural Net Setting` function.
 
 ![](images/BP-align-long-change-setting.png){ loading=lazy }  

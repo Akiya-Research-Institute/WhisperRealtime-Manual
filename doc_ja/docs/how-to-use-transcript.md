@@ -1,45 +1,49 @@
-# Transcription
+# 文字起こし
 
-See `Plugins > WhisperRealtime > Sample > BP > Transcript > BP_WhisperTranscriptRealtime` for a sample implementation.  
-You can test it in sample map located at `Plugins > WhisperRealtime > Sample > Map > test_Transcript`.
+サンプル実装は、`Plugins > WhisperRealtime > Sample > BP > Transcript > BP_WhisperTranscriptRealtime`にあります。  
+`Plugins > WhisperRealtime > Sample > Map > test_Transcript`のマップでテストできます。
 
-## Basic setup 
+## 基本的なセットアップ
 
-1. Create an actor blueprint.
-2. Add `Whisper Realtime Transcript` component.
-3. Set the default Neural Net settings:
-	- Specify `Model Size`. The larger the model, higher the accuracy and the CPU/GPU/memory usage.
-	- Specify `Execution device`, whether to use CPU or GPU.
-	- Specify `GPU Device ID` if you use GPU and you have multiple GPUs in your PC.
-	- Specify `Language spoken`.
-	- Specify `Do Translate to English`. If you just want to transcribe speech to text in the language specified above, leave unchecked.
-3. Set the default Audio Input Spectrum Analysis settings:
-	- Specify `Silence Volume Threshold`, volume threshold for determining silence.  
-		Maximum microphone input is 1.0. Complete silence is 0.0.
-	- Specify `Silence Duration Threshold`, time threshold for determining silent state (in seconds).  
-		If the volume below `Silence Volume Threshold` continues for this time, a transition is made from the speech state to the silent state.
-	- Specify `Speaking Duration Threshold`, Time threshold for determining speaking state (in seconds).  
-		If the volume above `Silence Volume Threshold` continues for this time, a transition is made from the silent state to the speech state.
-4. Set the default transcript settings:
-	- Specify `Prohibited Phrases` if you want to suppress certain phrases.
-	    - Note that this feature simply removes the specified phrases from the result. If you specify a short phrase, for example `at`, the phrase will be removed from all words (e.g. `that` becomes `th`).
-5. Get results from `On Speaking` event and `On Spoken` event.
+1. アクターBlueprintを作成します
+2. `Whisper Realtime Transcript`コンポーネントを追加します
+3. ニューラルネットワーク設定（Neural Net settings）のデフォルト値を設定します:
+	- `Model Size`：使用する機械学習モデルのサイズを指定します。モデルが大きくなるほど、精度が上がり、CPU/GPU/メモリの使用量も増えます。
+	- `Execution device`： CPUとGPUのどちらを使うかを指定します。
+	- `GPU Device ID`：GPUを使用し、PCに複数のGPUを搭載している場合、使用するGPUの番号を指定します。
+	- `Language spoken`：実際に話す言語を指定します。
+	- `Do Translate to English`：上記で指定した言語で音声をテキストに変換するのであれば、チェックを外したままにします。
+3. 音声入力・スペクトル分析設定（Audio Input Spectrum Analysis settings）のデフォルト値を設定します:
+	- `Silence Volume Threshold`：無音状態を判定するための音量の閾値を指定します。
+		マイクの最大入力は1.0。完全な無音は0.0です。
+	- `Silence Duration Threshold`：無音状態を判断するための時間の閾値を秒単位で指定します。
+		`Silence Volume Threshold`以下の音量がこの時間続くと、発話状態から無音状態へ遷移します。
+	- `Silence Speaking Threshold`：発話状態を判断するための時間の閾値を秒単位で指定します。
+		`Silence Volume Threshold`以上の音量がこの時間続くと、無音状態から発話状態へ遷移します。
+4. 文字起こし設定のデフォルト値を設定します:
+	- `Prohibited Phrases`：特定のフレーズを禁止したい場合に指定します。
+	    - この機能は、単に指定されたフレーズを結果から削除するだけであることに注意してください。例えば `at` のような短いフレーズを指定すると、すべての単語からそのフレーズが削除されます（例えば `that` は `th` になります）。
+5. イベント「On Speaking」と「On Spoken」から結果を取得します。
 
-	- `On Speaking` event gives intermidiate result while the user is still speaking.
-	- `On Spoken` event gives the final result after the user stops speaking.
+	- `On Speaking` イベントは、ユーザが発話中の、中間的な結果を提供します。
+	- `On Spoken` イベントは、ユーザが話すのを止めた後に、最終的な結果を提供します。
+
+	!!! Warning
+		`On Speaking`の結果の末尾は、発話の途中で音声がぶった切られているため、正しくない結果になりがちでありことに注意してください。
 
 	!!! Note
-		The values for Audio Input Spectrum Analysis settings are used to determine user is speaking or not.
+		ユーザーが発話中かどうかを判断するために音声入力スペクトル解析の設定値が使用されます。
 
     ![](images/BP-transcript-basic-setup.png){ loading=lazy }  
 
-## Change settings
+## 設定の変更
 
-- To change Neural Net settings, call `Change Neural Net Setting` function.
+- 音声入力・スペクトル分析設定を変更するには、`Change Spectrum Analysis Setting`関数を呼び出します。
+- ニューラルネットワーク設定を変更するには、`Change Neural Net Setting`関数を呼び出します。
 
 	![](images/BP-transcript-change-setting.png){ loading=lazy }  
 
-## Stop and restart
+## 停止と再開
 
-- To stop transcription or translation, call `Stop Mic Input` function.
-- To restart transcription or translation, call `Restart Mic Input` function.
+- 音声認識を停止するには、`Stop Mic Input` 関数を呼び出します。
+- 音声認識を再開するには、`Restart Mic Input` 関数を呼び出します。

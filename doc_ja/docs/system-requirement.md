@@ -1,10 +1,10 @@
-# System Requirements
+# システム要件
 
-## Supported Unreal Engine version:
+## 対応するUnreal Engineのバージョン
 
 - 5.1
 
-## Supported Platforms
+## 対応プラットフォーム
 
 | Platform                   | Development | Target Build |
 | -------------------------- | ----------- | ------------ |
@@ -12,10 +12,10 @@
 | Ubuntu Desktop 64bit       |             |              | 
 | Android                    |             |              |
 
-Currently Windows is the only supported platform.  
-But we are willing to add support for Linux and Android in the future.
+現在、サポートされているプラットフォームはWindowsのみです。  
+しかし、将来的にはLinuxやAndroidのサポートを追加していきたいと考えています。
 
-## Supported hardware acceleration 
+## 対応するハードウェアアクセラレーション 
 
 | Platform                   | Default CPU | GPU DirectML | GPU CUDA | GPU TensorRT | NNAPI |
 | -------------------------- | ----------- | ------------ | -------- |------------- | ----- |
@@ -25,9 +25,9 @@ But we are willing to add support for Linux and Android in the future.
 
 <!-- - To use GPU acceleration with DirectML, a DirectX 12 capable GPU is required. -->
     
-### CUDA and cuDNN
+### CUDAとcuDNN
 
-To use GPU acceleration with CUDA, a supported NVIDIA GPU is required and the following versions of CUDA and cuDNN are required to be installed. 
+CUDAによるGPUアクセラレーションを利用するには、対応するNVIDIA GPUが必要で、以下のバージョンのCUDAおよびcuDNNのインストールが必要です。
 
 === "Windows"
 
