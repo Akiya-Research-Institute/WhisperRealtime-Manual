@@ -86,16 +86,16 @@ markdown_extensions:
   - pymdownx.details
 
 nav:
-  - Plugin:
+  - プラグイン:
     - index.md
     - system-requirement.md
     - install.md
     - modules.md
-    - How to use:
+    - 使い方:
       - how-to-use-transcript.md
       - how-to-use-alignment-short.md
       - how-to-use-alignment-long.md
     - faq.md
     - changelog.md
-  - Demo Project:
+  - デモプロジェクト:
     - demo-project-overview.md

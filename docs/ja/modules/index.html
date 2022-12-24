@@ -19,7 +19,7 @@
     
     
       
-        <title>Modules - WhisperRealtimeマニュアル</title>
+        <title>モジュール構成 - WhisperRealtimeマニュアル</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules" class="md-skip">
+        <a href="#_1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modules
+              モジュール構成
             
           </span>
         </div>
@@ -294,14 +294,14 @@
       
       
         <label class="md-nav__link" for="__nav_1">
-          Plugin
+          プラグイン
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Plugin" data-md-level="1">
+      <nav class="md-nav" aria-label="プラグイン" data-md-level="1">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
-          Plugin
+          プラグイン
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -312,7 +312,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        What is WhisperRealtime?
+        WhisperRealtimeって何？
       </a>
     </li>
   
@@ -326,7 +326,7 @@
   
     <li class="md-nav__item">
       <a href="../system-requirement/" class="md-nav__link">
-        System Requirements
+        システム要件
       </a>
     </li>
   
@@ -340,7 +340,7 @@
   
     <li class="md-nav__item">
       <a href="../install/" class="md-nav__link">
-        Installation
+        インストール方法
       </a>
     </li>
   
@@ -363,7 +363,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Modules
+        モジュール構成
       </a>
       
     </li>
@@ -386,14 +386,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_5">
-          How to use
+          使い方
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="How to use" data-md-level="2">
+      <nav class="md-nav" aria-label="使い方" data-md-level="2">
         <label class="md-nav__title" for="__nav_1_5">
           <span class="md-nav__icon md-icon"></span>
-          How to use
+          使い方
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -404,7 +404,7 @@
   
     <li class="md-nav__item">
       <a href="../how-to-use-transcript/" class="md-nav__link">
-        Transcription
+        文字起こし
       </a>
     </li>
   
@@ -418,7 +418,7 @@
   
     <li class="md-nav__item">
       <a href="../how-to-use-alignment-short/" class="md-nav__link">
-        Alignment for short phrases
+        短いフレーズに対するアライメント
       </a>
     </li>
   
@@ -432,7 +432,7 @@
   
     <li class="md-nav__item">
       <a href="../how-to-use-alignment-long/" class="md-nav__link">
-        Alignment for long phrases
+        長いフレーズに対するアライメント
       </a>
     </li>
   
@@ -467,7 +467,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/" class="md-nav__link">
-        Changelog
+        更新履歴
       </a>
     </li>
   
@@ -499,14 +499,14 @@
       
       
         <label class="md-nav__link" for="__nav_2">
-          Demo Project
+          デモプロジェクト
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Demo Project" data-md-level="1">
+      <nav class="md-nav" aria-label="デモプロジェクト" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Demo Project
+          デモプロジェクト
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -545,8 +545,8 @@
                   
 
 
-<h1 id="modules">Modules</h1>
-<p>This plugin consists of the following 5 modules.</p>
+<h1 id="_1">モジュール構成</h1>
+<p>本プラグインは、以下の5つのモジュールで構成されています。</p>
 <table>
 <thead>
 <tr>
@@ -557,23 +557,23 @@
 <tbody>
 <tr>
 <td>Audio Input Spectrum Analysis</td>
-<td>A module for audio capture and spectrum analysis. This module provides the Mel Log spectrum of microphone input which is then fed to the neutal network.</td>
+<td>オーディオキャプチャとスペクトル解析のためのモジュールです。このモジュールは、マイクの入力波形をMel-Logスペクトログラムに変換し、ニュートラルネットワークに供給します。</td>
 </tr>
 <tr>
 <td>Byte level BPE Tokenizer</td>
-<td>A module for the conversion between string and "tokens". "Tokens" are int arrays used for input and output of neural network.</td>
+<td>文字列と「トークン」の変換を行うモジュールです。「トークン」は、ニューラルネットワークの入出力に使われるint型配列です。</td>
 </tr>
 <tr>
 <td>Customized Onnx Runtime</td>
-<td>A module for the execution of the neural network. While UE5 has an experimental Onnx Runtime module in its Neural Network Inference plugin with DirectML acceleration, this module provides the latest version of Onnx Runtime with CUDA acceleration.</td>
+<td>ニューラルネットワークを実行するためのモジュールです。UE5のNeural Network InferenceプラグインではDirectMLアクセラレーションによるOnnx Runtimeモジュール（ただしUE5.1時点でExperimental）がある中で、このモジュールが存在する理由はCUDAアクセラレーションによる最新バージョンのOnnx Runtimeを提供することです。</td>
 </tr>
 <tr>
 <td>Customized Onnx Runtime Editor</td>
-<td>A module for defining UAsset of ONNX model.</td>
+<td>ONNXモデルのUAssetを定義するためのモジュールです。</td>
 </tr>
 <tr>
 <td>Whisper Onnx Model</td>
-<td>A module for the main implementation of speech-to-text feature.</td>
+<td>音声からテキストへの変換機能の主要な実装を担うモジュールです。</td>
 </tr>
 </tbody>
 </table>
@@ -600,7 +600,7 @@
     <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href="../install/" class="md-footer__link md-footer__link--prev" aria-label="前: Installation" rel="prev">
+        <a href="../install/" class="md-footer__link md-footer__link--prev" aria-label="前: インストール方法" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -609,20 +609,20 @@
               <span class="md-footer__direction">
                 前
               </span>
-              Installation
+              インストール方法
             </div>
           </div>
         </a>
       
       
         
-        <a href="../how-to-use-transcript/" class="md-footer__link md-footer__link--next" aria-label="次: Transcription" rel="next">
+        <a href="../how-to-use-transcript/" class="md-footer__link md-footer__link--next" aria-label="次: 文字起こし" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              Transcription
+              文字起こし
             </div>
           </div>
           <div class="md-footer__button md-icon">

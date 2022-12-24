@@ -19,7 +19,7 @@
     
     
       
-        <title>Transcription - WhisperRealtimeマニュアル</title>
+        <title>文字起こし - WhisperRealtimeマニュアル</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#transcription" class="md-skip">
+        <a href="#_1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Transcription
+              文字起こし
             
           </span>
         </div>
@@ -294,14 +294,14 @@
       
       
         <label class="md-nav__link" for="__nav_1">
-          Plugin
+          プラグイン
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Plugin" data-md-level="1">
+      <nav class="md-nav" aria-label="プラグイン" data-md-level="1">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
-          Plugin
+          プラグイン
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -312,7 +312,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        What is WhisperRealtime?
+        WhisperRealtimeって何？
       </a>
     </li>
   
@@ -326,7 +326,7 @@
   
     <li class="md-nav__item">
       <a href="../system-requirement/" class="md-nav__link">
-        System Requirements
+        システム要件
       </a>
     </li>
   
@@ -340,7 +340,7 @@
   
     <li class="md-nav__item">
       <a href="../install/" class="md-nav__link">
-        Installation
+        インストール方法
       </a>
     </li>
   
@@ -354,7 +354,7 @@
   
     <li class="md-nav__item">
       <a href="../modules/" class="md-nav__link">
-        Modules
+        モジュール構成
       </a>
     </li>
   
@@ -378,14 +378,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_5">
-          How to use
+          使い方
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="How to use" data-md-level="2">
+      <nav class="md-nav" aria-label="使い方" data-md-level="2">
         <label class="md-nav__title" for="__nav_1_5">
           <span class="md-nav__icon md-icon"></span>
-          How to use
+          使い方
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -405,12 +405,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Transcription
+          文字起こし
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Transcription
+        文字起こし
       </a>
       
         
@@ -429,22 +429,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-setup" class="md-nav__link">
-    Basic setup
+  <a href="#_2" class="md-nav__link">
+    基本的なセットアップ
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#change-settings" class="md-nav__link">
-    Change settings
+  <a href="#_3" class="md-nav__link">
+    設定の変更
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#stop-and-restart" class="md-nav__link">
-    Stop and restart
+  <a href="#_4" class="md-nav__link">
+    停止と再開
   </a>
   
 </li>
@@ -465,7 +465,7 @@
   
     <li class="md-nav__item">
       <a href="../how-to-use-alignment-short/" class="md-nav__link">
-        Alignment for short phrases
+        短いフレーズに対するアライメント
       </a>
     </li>
   
@@ -479,7 +479,7 @@
   
     <li class="md-nav__item">
       <a href="../how-to-use-alignment-long/" class="md-nav__link">
-        Alignment for long phrases
+        長いフレーズに対するアライメント
       </a>
     </li>
   
@@ -514,7 +514,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/" class="md-nav__link">
-        Changelog
+        更新履歴
       </a>
     </li>
   
@@ -546,14 +546,14 @@
       
       
         <label class="md-nav__link" for="__nav_2">
-          Demo Project
+          デモプロジェクト
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Demo Project" data-md-level="1">
+      <nav class="md-nav" aria-label="デモプロジェクト" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Demo Project
+          デモプロジェクト
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -592,61 +592,81 @@
                   
 
 
-<h1 id="transcription">Transcription</h1>
-<p>See <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; BP &gt; Transcript &gt; BP_WhisperTranscriptRealtime</code> for a sample implementation.<br />
-You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; Map &gt; test_Transcript</code>.</p>
-<h2 id="basic-setup">Basic setup</h2>
+<h1 id="_1">文字起こし</h1>
+<p>サンプル実装は、<code>Plugins &gt; WhisperRealtime &gt; Sample &gt; BP &gt; Transcript &gt; BP_WhisperTranscriptRealtime</code>にあります。<br />
+<code>Plugins &gt; WhisperRealtime &gt; Sample &gt; Map &gt; test_Transcript</code>のマップでテストできます。</p>
+<h2 id="_2">基本的なセットアップ</h2>
 <ol>
-<li>Create an actor blueprint.</li>
-<li>Add <code>Whisper Realtime Transcript</code> component.</li>
-<li>Set the default Neural Net settings:<ul>
-<li>Specify <code>Model Size</code>. The larger the model, higher the accuracy and the CPU/GPU/memory usage.</li>
-<li>Specify <code>Execution device</code>, whether to use CPU or GPU.</li>
-<li>Specify <code>GPU Device ID</code> if you use GPU and you have multiple GPUs in your PC.</li>
-<li>Specify <code>Language spoken</code>.</li>
-<li>Specify <code>Do Translate to English</code>. If you just want to transcribe speech to text in the language specified above, leave unchecked.</li>
+<li>アクターBlueprintを作成します</li>
+<li><code>Whisper Realtime Transcript</code>コンポーネントを追加します</li>
+<li>
+<p>ニューラルネットワーク設定（Neural Net settings）のデフォルト値を設定します:</p>
+<ul>
+<li>
+<p><code>Model Size</code>：使用する機械学習モデルのサイズを指定します。モデルが大きくなるほど、精度が上がり、CPU/GPU/メモリの使用量も増えます。</p>
+<details class="question">
+<summary>Largeモデルは？</summary>
+<p>Whisperの公式実装では、一番大きいモデルサイズとして「Large」が提供されていますが、このプラグインにはLargeモデルは含まれていません。<br />
+なぜなら、ゲーム用途として大きすぎ、プラグイン開発者の開発環境で正常に動作させることができなかったためです。</p>
+</details>
+</li>
+<li>
+<p><code>Execution device</code>： CPUとGPUのどちらを使うかを指定します。</p>
+</li>
+<li><code>GPU Device ID</code>：GPUを使用し、PCに複数のGPUを搭載している場合、使用するGPUの番号を指定します。</li>
+<li><code>Language spoken</code>：実際に話す言語を指定します。</li>
+<li><code>Do Translate to English</code>：上記で指定した言語で音声をテキストに変換するのであれば、チェックを外したままにします。</li>
 </ul>
 </li>
-<li>Set the default Audio Input Spectrum Analysis settings:<ul>
-<li>Specify <code>Silence Volume Threshold</code>, volume threshold for determining silence.<br />
-    Maximum microphone input is 1.0. Complete silence is 0.0.</li>
-<li>Specify <code>Silence Duration Threshold</code>, time threshold for determining silent state (in seconds).<br />
-    If the volume below <code>Silence Volume Threshold</code> continues for this time, a transition is made from the speech state to the silent state.</li>
-<li>Specify <code>Speaking Duration Threshold</code>, Time threshold for determining speaking state (in seconds).<br />
-    If the volume above <code>Silence Volume Threshold</code> continues for this time, a transition is made from the silent state to the speech state.</li>
+<li>
+<p>音声入力・スペクトル分析設定（Audio Input Spectrum Analysis settings）のデフォルト値を設定します:</p>
+<ul>
+<li><code>Silence Volume Threshold</code>：無音状態を判定するための音量の閾値を指定します。
+    マイクの最大入力は1.0。完全な無音は0.0です。</li>
+<li><code>Silence Duration Threshold</code>：無音状態を判断するための時間の閾値を秒単位で指定します。
+    <code>Silence Volume Threshold</code>以下の音量がこの時間続くと、発話状態から無音状態へ遷移します。</li>
+<li><code>Silence Speaking Threshold</code>：発話状態を判断するための時間の閾値を秒単位で指定します。
+    <code>Silence Volume Threshold</code>以上の音量がこの時間続くと、無音状態から発話状態へ遷移します。</li>
 </ul>
 </li>
-<li>Set the default transcript settings:<ul>
-<li>Specify <code>Prohibited Phrases</code> if you want to suppress certain phrases.<ul>
-<li>Note that this feature simply removes the specified phrases from the result. If you specify a short phrase, for example <code>at</code>, the phrase will be removed from all words (e.g. <code>that</code> becomes <code>th</code>).</li>
+<li>
+<p>文字起こし設定のデフォルト値を設定します:</p>
+<ul>
+<li><code>Prohibited Phrases</code>：特定のフレーズを禁止したい場合に指定します。<ul>
+<li>この機能は、単に指定されたフレーズを結果から削除するだけであることに注意してください。例えば <code>at</code> のような短いフレーズを指定すると、すべての単語からそのフレーズが削除されます（例えば <code>that</code> は <code>th</code> になります）。</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>Get results from <code>On Speaking</code> event and <code>On Spoken</code> event.</p>
+<p>イベント「On Speaking」と「On Spoken」から結果を取得します。</p>
 <ul>
-<li><code>On Speaking</code> event gives intermidiate result while the user is still speaking.</li>
-<li><code>On Spoken</code> event gives the final result after the user stops speaking.</li>
+<li><code>On Speaking</code> イベントは、ユーザが発話中の、中間的な結果を提供します。</li>
+<li><code>On Spoken</code> イベントは、ユーザが話すのを止めた後に、最終的な結果を提供します。</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The values for Audio Input Spectrum Analysis settings are used to determine user is speaking or not.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code>On Speaking</code>の結果の末尾は、発話の途中で音声がぶった切られているため、正しくない結果になりがちでありことに注意してください。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>ユーザーが発話中かどうかを判断するために音声入力スペクトル解析の設定値が使用されます。</p>
 </div>
 <p><img alt="" loading="lazy" src="../images/BP-transcript-basic-setup.png" />  </p>
 </li>
 </ol>
-<h2 id="change-settings">Change settings</h2>
+<h2 id="_3">設定の変更</h2>
 <ul>
+<li>音声入力・スペクトル分析設定を変更するには、<code>Change Spectrum Analysis Setting</code>関数を呼び出します。</li>
 <li>
-<p>To change Neural Net settings, call <code>Change Neural Net Setting</code> function.</p>
+<p>ニューラルネットワーク設定を変更するには、<code>Change Neural Net Setting</code>関数を呼び出します。</p>
 <p><img alt="" loading="lazy" src="../images/BP-transcript-change-setting.png" />  </p>
 </li>
 </ul>
-<h2 id="stop-and-restart">Stop and restart</h2>
+<h2 id="_4">停止と再開</h2>
 <ul>
-<li>To stop transcription or translation, call <code>Stop Mic Input</code> function.</li>
-<li>To restart transcription or translation, call <code>Restart Mic Input</code> function.</li>
+<li>音声認識を停止するには、<code>Stop Mic Input</code> 関数を呼び出します。</li>
+<li>音声認識を再開するには、<code>Restart Mic Input</code> 関数を呼び出します。</li>
 </ul>
 
 
@@ -670,7 +690,7 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
     <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href="../modules/" class="md-footer__link md-footer__link--prev" aria-label="前: Modules" rel="prev">
+        <a href="../modules/" class="md-footer__link md-footer__link--prev" aria-label="前: モジュール構成" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -679,20 +699,20 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
               <span class="md-footer__direction">
                 前
               </span>
-              Modules
+              モジュール構成
             </div>
           </div>
         </a>
       
       
         
-        <a href="../how-to-use-alignment-short/" class="md-footer__link md-footer__link--next" aria-label="次: Alignment for short phrases" rel="next">
+        <a href="../how-to-use-alignment-short/" class="md-footer__link md-footer__link--next" aria-label="次: 短いフレーズに対するアライメント" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              Alignment for short phrases
+              短いフレーズに対するアライメント
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -1,10 +1,10 @@
 # FAQ
 
-## UE crashes when GPU_CUDA is selected
+## GPU_CUDAを選択すると、UEがクラッシュします。
 
-Please confirm you have installed CUDA and cuDNN correctly.
+CUDAとcuDNNが正しくインストールされていることを確認してください。
 
-## Transcipt result is unstable
+## 文字起こしの結果が不安定です。
 
-- Please speak loudly near the microphone.
-- Try larger models
+- マイクの近くで大きな声で話してください。
+- より大きなモデルを試してみてください。

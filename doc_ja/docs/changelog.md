@@ -1,4 +1,4 @@
-# Changelog
+# 更新履歴
    
 ## v1.0 (Dec ??, 2022)
-- First release.
+- 初版リリース

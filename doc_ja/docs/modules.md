@@ -1,13 +1,13 @@
-# Modules
+# モジュール構成
 
-This plugin consists of the following 5 modules.
+本プラグインは、以下の5つのモジュールで構成されています。
 
 | Module | Description |
 | ---- | ---- |
-| Audio Input Spectrum Analysis | A module for audio capture and spectrum analysis. This module provides the Mel Log spectrum of microphone input which is then fed to the neutal network. |
-| Byte level BPE Tokenizer | A module for the conversion between string and "tokens". "Tokens" are int arrays used for input and output of neural network. |
-| Customized Onnx Runtime | A module for the execution of the neural network. While UE5 has an experimental Onnx Runtime module in its Neural Network Inference plugin with DirectML acceleration, this module provides the latest version of Onnx Runtime with CUDA acceleration. |
-| Customized Onnx Runtime Editor | A module for defining UAsset of ONNX model. |
-| Whisper Onnx Model | A module for the main implementation of speech-to-text feature. |
+| Audio Input Spectrum Analysis | オーディオキャプチャとスペクトル解析のためのモジュールです。このモジュールは、マイクの入力波形をMel-Logスペクトログラムに変換し、ニュートラルネットワークに供給します。 |
+| Byte level BPE Tokenizer | 文字列と「トークン」の変換を行うモジュールです。「トークン」は、ニューラルネットワークの入出力に使われるint型配列です。 |
+| Customized Onnx Runtime | ニューラルネットワークを実行するためのモジュールです。UE5のNeural Network InferenceプラグインではDirectMLアクセラレーションによるOnnx Runtimeモジュール（ただしUE5.1時点でExperimental）がある中で、このモジュールが存在する理由はCUDAアクセラレーションによる最新バージョンのOnnx Runtimeを提供することです。 |
+| Customized Onnx Runtime Editor | ONNXモデルのUAssetを定義するためのモジュールです。 |
+| Whisper Onnx Model | 音声からテキストへの変換機能の主要な実装を担うモジュールです。 |
 
 ![](images/systemOverview.png){ loading=lazy }
