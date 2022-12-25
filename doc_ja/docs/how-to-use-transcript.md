@@ -20,6 +20,7 @@
 	- `Do Translate to English`：上記で指定した言語で音声をテキストに変換するのであれば、チェックを外したままにします。
 
 3. 音声入力・スペクトル分析設定（Audio Input Spectrum Analysis settings）のデフォルト値を設定します:
+	- `Volume Multiplier`：マイク入力の音量倍率。1.0なら変更なし。
 	- `Silence Volume Threshold`：無音状態を判定するための音量の閾値を指定します。
 		マイクの最大入力は1.0。完全な無音は0.0です。
 	- `Silence Duration Threshold`：無音状態を判断するための時間の閾値を秒単位で指定します。

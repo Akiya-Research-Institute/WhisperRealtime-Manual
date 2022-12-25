@@ -593,7 +593,7 @@
 
 
 <h1 id="alignment-for-long-phrases">Alignment for long phrases</h1>
-<p>See <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; BP &gt; Alignment_Long &gt; BP_WhisperAlignmentRealtime</code> for a sample implementation.
+<p>See <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; BP &gt; Alignment_Long &gt; BP_WhisperRealtimeAlignmentLongText</code> for a sample implementation.
 You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt; Sample &gt; Map &gt; test_AlignmentLong</code>.</p>
 <h2 id="basic-setup">Basic setup</h2>
 <ol>
@@ -613,7 +613,7 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
 <li>Specify <code>Min Token Length to Search</code>, number of tokens to check if they have been spoken.</li>
 <li>
 <p>Specify <code>Probability Threshold</code>, a confidence threshold base for determining speech.</p>
-<details class="question">
+<details class="info">
 <summary>Formula</summary>
 <p>If b is this value and p is the probability of occurrence of each token when silence is input, then</p>
 <pre><code>(1 - p) * b + p
@@ -642,17 +642,23 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
 <p>See <a href="../how-to-use-transcript">How to use - Transcription</a> page for the difference of <code>On Speaking</code> and <code>On Spoken</code> events.</p>
 </li>
 </ul>
+<details class="info">
+<summary>How to check the tokens and thresholds for each phrase</summary>
+<p>Call <code>Get Alignment Targets</code> to get the array of <code>Whisper Alignment Long Target</code>.<br />
+Each element of this array contains information such as the token ID for each phrase.</p>
+</details>
 </li>
 </ol>
 <p><img alt="" loading="lazy" src="../images/BP-align-long-basic-setup.png" />  </p>
 <h2 id="reset-the-progress">Reset the progress</h2>
-<p>Call "Reset Progress" function to reset the progress of alignment for all phrases.</p>
+<p>Call <code>Reset Progress</code> function to reset the progress of alignment for all phrases.</p>
 <h2 id="change-settings">Change settings</h2>
-<ol>
+<ul>
 <li>To change Alignment settings, call <code>Change Alignment Setting</code> function.</li>
 <li>To change <code>Phrases to Align</code>, call <code>Set Phrases</code> function.</li>
+<li>To change Audio Input Spectrum Analysis settings, call <code>Change Spectrum Analysis Setting</code> function.</li>
 <li>To change Neural Net settings, call <code>Change Neural Net Setting</code> function.</li>
-</ol>
+</ul>
 <p><img alt="" loading="lazy" src="../images/BP-align-long-change-setting.png" />  </p>
 
 

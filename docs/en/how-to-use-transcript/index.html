@@ -599,15 +599,29 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
 <ol>
 <li>Create an actor blueprint.</li>
 <li>Add <code>Whisper Realtime Transcript</code> component.</li>
-<li>Set the default Neural Net settings:<ul>
-<li>Specify <code>Model Size</code>. The larger the model, higher the accuracy and the CPU/GPU/memory usage.</li>
-<li>Specify <code>Execution device</code>, whether to use CPU or GPU.</li>
+<li>
+<p>Set the default Neural Net settings:</p>
+<ul>
+<li>
+<p>Specify <code>Model Size</code>. The larger the model, higher the accuracy and the CPU/GPU/memory usage.</p>
+<details class="question">
+<summary>Where is Large model?</summary>
+<p>The official implementation of Whisper offers "Large" as the largest model size, but this plugin does not include the Large model.<br />
+This is because it is too large for game use and could not be made to work properly in the plugin developer's environment.</p>
+</details>
+</li>
+<li>
+<p>Specify <code>Execution device</code>, whether to use CPU or GPU.</p>
+</li>
 <li>Specify <code>GPU Device ID</code> if you use GPU and you have multiple GPUs in your PC.</li>
 <li>Specify <code>Language spoken</code>.</li>
 <li>Specify <code>Do Translate to English</code>. If you just want to transcribe speech to text in the language specified above, leave unchecked.</li>
 </ul>
 </li>
-<li>Set the default Audio Input Spectrum Analysis settings:<ul>
+<li>
+<p>Set the default Audio Input Spectrum Analysis settings:</p>
+<ul>
+<li>Specify <code>Volume Multiplier</code>, volume multiplier for microphone input. No change if 1.0.</li>
 <li>Specify <code>Silence Volume Threshold</code>, volume threshold for determining silence.<br />
     Maximum microphone input is 1.0. Complete silence is 0.0.</li>
 <li>Specify <code>Silence Duration Threshold</code>, time threshold for determining silent state (in seconds).<br />
@@ -616,7 +630,9 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
     If the volume above <code>Silence Volume Threshold</code> continues for this time, a transition is made from the silent state to the speech state.</li>
 </ul>
 </li>
-<li>Set the default transcript settings:<ul>
+<li>
+<p>Set the default transcript settings:</p>
+<ul>
 <li>Specify <code>Prohibited Phrases</code> if you want to suppress certain phrases.<ul>
 <li>Note that this feature simply removes the specified phrases from the result. If you specify a short phrase, for example <code>at</code>, the phrase will be removed from all words (e.g. <code>that</code> becomes <code>th</code>).</li>
 </ul>
@@ -629,8 +645,12 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
 <li><code>On Speaking</code> event gives intermidiate result while the user is still speaking.</li>
 <li><code>On Spoken</code> event gives the final result after the user stops speaking.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Note that the end of the <code>On Speaking</code> result tends to be incorrect because the speech is abruptly cut off in the middle of the speech.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>The values for Audio Input Spectrum Analysis settings are used to determine user is speaking or not.</p>
 </div>
 <p><img alt="" loading="lazy" src="../images/BP-transcript-basic-setup.png" />  </p>
@@ -638,6 +658,7 @@ You can test it in sample map located at <code>Plugins &gt; WhisperRealtime &gt;
 </ol>
 <h2 id="change-settings">Change settings</h2>
 <ul>
+<li>To change Audio Input Spectrum Analysis settings, call <code>Change Spectrum Analysis Setting</code> function.</li>
 <li>
 <p>To change Neural Net settings, call <code>Change Neural Net Setting</code> function.</p>
 <p><img alt="" loading="lazy" src="../images/BP-transcript-change-setting.png" />  </p>
