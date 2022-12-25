@@ -20,7 +20,7 @@ You can test it in sample map located at `Plugins > WhisperRealtime > Sample > M
 	- Specify `Do Translate to English`. If you just want to transcribe speech to text in the language specified above, leave unchecked.
 
 3. Set the default Audio Input Spectrum Analysis settings:
-	- Specify `Volume Multiplier`, volume multiplier for microphone input. No change if 1.0.
+	- Specify `Volume Multiplier`, volume multiplier for microphone input. No change if 1.0. This value does not affect the silence/speech determination by the threshold below.
 	- Specify `Silence Volume Threshold`, volume threshold for determining silence.  
 		Maximum microphone input is 1.0. Complete silence is 0.0.
 	- Specify `Silence Duration Threshold`, time threshold for determining silent state (in seconds).  
