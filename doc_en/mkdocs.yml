@@ -85,6 +85,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.details
+  - footnotes
 
 nav:
   - Plugin:
@@ -96,6 +97,7 @@ nav:
       - how-to-use-transcript.md
       - how-to-use-alignment-short.md
       - how-to-use-alignment-long.md
+      - how-to-build-package.md
     - faq.md
     - changelog.md
   - Demo Project:

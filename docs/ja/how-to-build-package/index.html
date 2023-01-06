@@ -1,25 +1,25 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Official documentation of Whisper-Based Real-time Speech Recognition, an Unreal Engine plugin for real-time speech-to-text transcription and alignment with multi-language support, based on OpenAI's Whisper model.">
+        <meta name="description" content="OpenAIのWhisperモデルをベースとした、Unreal Engineで動く多言語対応のリアルタイム音声テキスト変換・アラインメントプラグイン「Whisper-Based Real-time Speech Recognition」の公式ドキュメント">
       
       
         <meta name="author" content="Kenji Asaba">
       
       
-        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/system-requirement/">
+        <link rel="canonical" href="https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/how-to-build-package/">
       
       <link rel="icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>System Requirements - WhisperRealtime plugin Manual</title>
+        <title>パッケージのビルド - WhisperRealtimeマニュアル</title>
       
     
     
@@ -86,8 +86,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#system-requirements" class="md-skip">
-          Skip to content
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
         </a>
       
     </div>
@@ -99,8 +99,8 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="WhisperRealtime plugin Manual" class="md-header__button md-logo" aria-label="WhisperRealtime plugin Manual" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="WhisperRealtimeマニュアル" class="md-header__button md-logo" aria-label="WhisperRealtimeマニュアル" data-md-component="logo">
       
   <img src="../images/logo.png" alt="logo">
 
@@ -112,13 +112,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            WhisperRealtime plugin Manual
+            WhisperRealtimeマニュアル
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System Requirements
+              パッケージのビルド
             
           </span>
         </div>
@@ -204,7 +204,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -215,7 +215,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
           </a>
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -227,7 +227,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            検索を初期化
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -261,14 +261,14 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="WhisperRealtime plugin Manual" class="md-nav__button md-logo" aria-label="WhisperRealtime plugin Manual" data-md-component="logo">
+    <a href=".." title="WhisperRealtimeマニュアル" class="md-nav__button md-logo" aria-label="WhisperRealtimeマニュアル" data-md-component="logo">
       
   <img src="../images/logo.png" alt="logo">
 
     </a>
-    WhisperRealtime plugin Manual
+    WhisperRealtimeマニュアル
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -294,14 +294,14 @@
       
       
         <label class="md-nav__link" for="__nav_1">
-          Plugin
+          プラグイン
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Plugin" data-md-level="1">
+      <nav class="md-nav" aria-label="プラグイン" data-md-level="1">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
-          Plugin
+          プラグイン
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -312,7 +312,119 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        What is WhisperRealtime?
+        WhisperRealtimeって何？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-requirement/" class="md-nav__link">
+        システム要件
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        インストール方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        モジュール構成
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_5">
+          使い方
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="使い方" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          使い方
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use-transcript/" class="md-nav__link">
+        文字起こし
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use-alignment-short/" class="md-nav__link">
+        短いフレーズに対するアライメント
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use-alignment-long/" class="md-nav__link">
+        長いフレーズに対するアライメント
       </a>
     </li>
   
@@ -335,17 +447,17 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          System Requirements
+          パッケージのビルド
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        System Requirements
+        パッケージのビルド
       </a>
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -354,36 +466,49 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supported-unreal-engine-version" class="md-nav__link">
-    Supported Unreal Engine version:
+  <a href="#_2" class="md-nav__link">
+    アセットマネージャー設定方法
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#supported-platforms" class="md-nav__link">
-    Supported Platforms
+  <a href="#_3" class="md-nav__link">
+    パッケージサイズの縮小
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-hardware-acceleration" class="md-nav__link">
-    Supported hardware acceleration
-  </a>
-  
-    <nav class="md-nav" aria-label="Supported hardware acceleration">
+    <nav class="md-nav" aria-label="パッケージサイズの縮小">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cuda-and-cudnn" class="md-nav__link">
-    CUDA and cuDNN
+  <a href="#_4" class="md-nav__link">
+    機械学習モデルのアセットとそれを利用する機能の関係
   </a>
+  
+    <nav class="md-nav" aria-label="機械学習モデルのアセットとそれを利用する機能の関係">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    英語のみのモデル
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    多言語対応モデル
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -396,116 +521,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
-        Installation
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modules/" class="md-nav__link">
-        Modules
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1_5">
-          How to use
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="How to use" data-md-level="2">
-        <label class="md-nav__title" for="__nav_1_5">
-          <span class="md-nav__icon md-icon"></span>
-          How to use
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-use-transcript/" class="md-nav__link">
-        Transcription
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-use-alignment-short/" class="md-nav__link">
-        Alignment for short phrases
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-use-alignment-long/" class="md-nav__link">
-        Alignment for long phrases
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-build-package/" class="md-nav__link">
-        Build package
-      </a>
     </li>
   
 
@@ -539,7 +554,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/" class="md-nav__link">
-        Changelog
+        更新履歴
       </a>
     </li>
   
@@ -571,14 +586,14 @@
       
       
         <label class="md-nav__link" for="__nav_2">
-          Demo Project
+          デモプロジェクト
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Demo Project" data-md-level="1">
+      <nav class="md-nav" aria-label="デモプロジェクト" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Demo Project
+          デモプロジェクト
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -589,7 +604,7 @@
   
     <li class="md-nav__item">
       <a href="../demo-project-overview/" class="md-nav__link">
-        Demo
+        機能デモ
       </a>
     </li>
   
@@ -617,100 +632,108 @@
                   
 
 
-<h1 id="system-requirements">System Requirements</h1>
-<h2 id="supported-unreal-engine-version">Supported Unreal Engine version:</h2>
+<h1 id="_1">パッケージのビルド</h1>
+<p>WhisperRealtimeプラグインを使用したプロジェクトをビルドしてパッケージを作成するには、機械学習モデルのアセットをパッケージに含むようにアセットマネージャーを設定する必要があります。</p>
+<h2 id="_2">アセットマネージャー設定方法</h2>
+<p><code>Project Settings &gt; Game &gt; Asset Manager &gt; Primary Asset Types to Scan</code>に要素を追加し、下記の値を設定します。<br />
+または、デフォルトでIndex=1に既に<code>PrimaryAssetLabel</code>が設定されているので、この要素を編集してもOKです。</p>
+<ol>
+<li><code>Primary Asset Types</code>を<code>PrimaryAssetLabel</code>に設定します。</li>
+<li><code>Asset Base Class</code>を<code>PrimaryAssetLabel</code>に設定します。</li>
+<li><code>Is Editor Only</code>をオフにします。</li>
+<li><code>Specific Assets</code>に要素を追加し、<code>WhisperModel_all</code>を指定します。</li>
+</ol>
+<p><img alt="" loading="lazy" src="../images/Asset-manager-setting.png" /></p>
+<h2 id="_3">パッケージサイズの縮小</h2>
+<p>WhisperRealtimeプラグインが使用する機械学習モデルの一部のみをパッケージすることで、パッケージサイズを縮小することができます。</p>
 <ul>
-<li>5.1</li>
+<li>
+<p><a href="#_2">アセットマネージャー設定</a>の4で、<code>WhisperModel_all</code>ではなく、<code>Plugins &gt; WhisperRealtime &gt; PrimaryAssetLabels</code>の<code>BySize</code>以下のラベルを指定することで、指定したモデルサイズのみをパッケージすることができます。</p>
+</li>
+<li>
+<p>または、<code>ByFunctionAndLanguage</code>以下のラベルを指定することで、指定した機能に関するモデルのみをパッケージすることができます。</p>
+</li>
+<li>
+<p>または、下記のテーブルを参照し、必要なモデルのみを手動で指定することができます。</p>
+</li>
 </ul>
-<h2 id="supported-platforms">Supported Platforms</h2>
+<h3 id="_4">機械学習モデルのアセットとそれを利用する機能の関係</h3>
+<h4 id="_5">英語のみのモデル</h4>
 <table>
 <thead>
 <tr>
-<th>Platform</th>
-<th>Development</th>
-<th>Target Build</th>
+<th>Asset name of ML model</th>
+<th>Transcription</th>
+<th>Short-phrase Alignment</th>
+<th>Long-phrase Alignment</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Windows 64bit</td>
+<td><code>encoder_mask_1500_0_{SIZE}_en_opt_fp16</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>Ubuntu Desktop 64bit</td>
+<td><code>decoder_1_-1_16_{SIZE}_en_opt_fp16</code><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+<td>✅</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>Android</td>
+<td><code>aligner_b_n_{SIZE}_en_opt_fp16</code></td>
 <td></td>
-<td></td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition question">
-<p class="admonition-title">Support for other platforms</p>
-<p>Currently Windows is the only supported platform.<br />
-But we are willing to add support for Linux and Android in the future.</p>
-</div>
-<h2 id="supported-hardware-acceleration">Supported hardware acceleration</h2>
+<h4 id="_6">多言語対応モデル</h4>
 <table>
 <thead>
 <tr>
-<th>Platform</th>
-<th>Default CPU</th>
-<th>GPU DirectML</th>
-<th>GPU CUDA</th>
-<th>GPU TensorRT</th>
-<th>NNAPI</th>
+<th>Asset name of ML model</th>
+<th>Transcription</th>
+<th>Short-phrase Alignment</th>
+<th>Long-phrase Alignment</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Windows 64bit</td>
+<td><code>encoder_mask_1500_0_{SIZE}_opt_fp16</code></td>
 <td>✅</td>
-<td></td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>decoder_1_-1_16_{SIZE}_opt_fp16</code><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
 <td>✅</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>Ubuntu Desktop 64bit</td>
+<td><code>aligner_b_n_{SIZE}_opt_fp16</code></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Android</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 </tbody>
 </table>
-<!-- - To use GPU acceleration with DirectML, a DirectX 12 capable GPU is required. -->
-
-<h3 id="cuda-and-cudnn">CUDA and cuDNN</h3>
-<p>To use GPU acceleration with CUDA, a supported NVIDIA GPU is required and the following versions of CUDA and cuDNN are required to be installed. </p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><a href="https://developer.nvidia.com/cuda-11-6-0-download-archive?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10">CUDA: 11.6</a></li>
-<li><a href="https://developer.nvidia.com/compute/cudnn/secure/8.5.0/local_installers/11.7/cudnn-windows-x86_64-8.5.0.96_cuda11-archive.zip">cuDNN: 8.5.0.96</a></li>
-</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><code>{SIZE}</code>は、<code>tiny</code>, <code>base</code>, <code>small</code>, <code>medium</code>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>モデルサイズがMediumの場合は、<code>decoder_1_-1_8_medium_en_opt_fp16</code>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>モデルサイズがMediumの場合は、<code>decoder_1_-1_8_medium_opt_fp16</code>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
-</div>
-</div>
-<!-- === "Linux"
-
-    - CUDA: 11.6
-    - cuDNN: 8.2.4 -->
 
 
   
@@ -730,32 +753,32 @@ But we are willing to add support for Linux and Android in the future.</p>
         <footer class="md-footer">
   
     
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+    <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: What is WhisperRealtime?" rel="prev">
+        <a href="../how-to-use-alignment-long/" class="md-footer__link md-footer__link--prev" aria-label="前: 長いフレーズに対するアライメント" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Previous
+                前
               </span>
-              What is WhisperRealtime?
+              長いフレーズに対するアライメント
             </div>
           </div>
         </a>
       
       
         
-        <a href="../install/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation" rel="next">
+        <a href="../faq/" class="md-footer__link md-footer__link--next" aria-label="次: FAQ" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                次
               </span>
-              Installation
+              FAQ
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -824,7 +847,7 @@ But we are willing to add support for Linux and Android in the future.</p>
       
       
     
-    <a href="https://www.unrealengine.com/marketplace/en/product/d293a6a427c94831888ca0f47bc5939b" target="_blank" rel="noopener" title="www.unrealengine.com" class="md-social__link">
+    <a href="https://www.unrealengine.com/marketplace/ja/product/d293a6a427c94831888ca0f47bc5939b" target="_blank" rel="noopener" title="www.unrealengine.com" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16V4Z"/></svg>
     </a>
   
@@ -839,7 +862,7 @@ But we are willing to add support for Linux and Android in the future.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>

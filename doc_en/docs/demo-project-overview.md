@@ -1,6 +1,6 @@
 # Demo
 
-Demo .exe of WhisperRealtime plugin for Unreal Engine
+Demo .exe of WhisperRealtime plugin
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mmMDhH0ueyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -70,9 +70,13 @@ See these pages for details of the optional settings available in the UI panel o
 
 ![](images/demo.png){ loading=lazy }  
 
+## GitHub source
+
+The UE5 project files are available [on GitHub](https://github.com/Akiya-Research-Institute/WhisperRealtime-Demo).
+
 ## Third party license notice
 
-The demo software  uses Unreal® Engine. Unreal® is a trademark or registered trademark of Epic Games, Inc. in the United States of America and elsewhere. Unreal® Engine, Copyright 1998 – 2022, Epic Games, Inc. All rights reserved.
+The demo software uses Unreal® Engine. Unreal® is a trademark or registered trademark of Epic Games, Inc. in the United States of America and elsewhere. Unreal® Engine, Copyright 1998 – 2022, Epic Games, Inc. All rights reserved.
 
 The demo software is built using the following open source software:
 

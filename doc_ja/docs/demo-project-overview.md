@@ -68,7 +68,11 @@ Windows（OS）設定からマイクを選択してから本デモを起動し�
 
 ウィンドウ右側のUIパネルで利用可能なオプション設定の詳細については、これらのページを参照してください。
 
-![](images/demo.png){ loading=lazy }  
+![](images/demo.png){ loading=lazy }
+
+## GitHubソース
+
+デモのUE5プロジェクトファイルを[GitHubで公開](https://github.com/Akiya-Research-Institute/WhisperRealtime-Demo)しています。
 
 ## Third party license notice
 
