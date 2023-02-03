@@ -12,7 +12,7 @@
 | Ubuntu Desktop 64bit       |             |              | 
 | Android                    |             |              |
 
-!!! Question "Windows意外のサポート"
+!!! Question "Windows以外のサポート"
     現在、サポートされているプラットフォームはWindowsのみです。  
     しかし、将来的にはLinuxやAndroidのサポートを追加していきたいと考えています。(このプラグインの売れ行き次第ではありますが...）
 
