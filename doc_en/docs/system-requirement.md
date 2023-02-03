@@ -14,7 +14,7 @@
 
 !!! Question "Support for other platforms"
     Currently Windows is the only supported platform.  
-    But we are willing to add support for Linux and Android in the future.
+    But we are willing to add support for Linux and Android in the future. (Depending on the sales of this plugin, though...)
 
 ## Supported hardware acceleration 
 
