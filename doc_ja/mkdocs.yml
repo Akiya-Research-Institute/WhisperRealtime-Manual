@@ -2,7 +2,7 @@ site_name: WhisperRealtimeマニュアル
 site_url: https://Akiya-Research-Institute.github.io/WhisperRealtime-Manual/
 site_author: Kenji Asaba
 site_description: OpenAIのWhisperモデルをベースとした、Unreal Engineで動く多言語対応のリアルタイム音声テキスト変換・アラインメントプラグイン「Whisper-Based Real-time Speech Recognition」の公式ドキュメント
-copyright: Copyright &copy; 2022 Akiya Research Institute, Inc. All Rights Reserved
+copyright: Copyright &copy; 2023 Akiya Research Institute, Inc. All Rights Reserved
 
 site_dir: ../docs/ja
 
