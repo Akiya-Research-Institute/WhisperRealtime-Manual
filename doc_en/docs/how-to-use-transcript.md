@@ -3,6 +3,10 @@
 See `Plugins > WhisperRealtime > Sample > BP > Transcript > BP_WhisperTranscriptRealtime` for a sample implementation.  
 You can test it in sample map located at `Plugins > WhisperRealtime > Sample > Map > test_Transcript`.
 
+## Step-by-step tutorial
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JHlukIxGazA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Basic setup 
 
 1. Create an actor blueprint.

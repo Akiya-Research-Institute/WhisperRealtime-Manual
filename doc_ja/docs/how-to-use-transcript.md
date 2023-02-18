@@ -3,6 +3,10 @@
 サンプル実装は、`Plugins > WhisperRealtime > Sample > BP > Transcript > BP_WhisperTranscriptRealtime`にあります。  
 `Plugins > WhisperRealtime > Sample > Map > test_Transcript`のマップでテストできます。
 
+## Step-by-step チュートリアル
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JHlukIxGazA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## 基本的なセットアップ
 
 1. アクターBlueprintを作成します
