@@ -1,2 +1,2 @@
 start http://localhost:8000/
-python -m mkdocs serve 
+F:\miniconda3\envs\mkdocs\python -m mkdocs serve 
